@@ -2,7 +2,7 @@
 #load "nuget:?package=Cake.Storm.Fluent.DotNetCore"
 #load "nuget:?package=Cake.Storm.Fluent.NuGet"
 
-string version = Argument("version", "0.1.0-alpha-0001");
+string version = Argument("version", "0.1.0");
 
 Configure()
     .UseRootDirectory("..")
@@ -20,7 +20,7 @@ Configure()
     .AddPlatform("dotnet")
     .AddTarget("pack")
     .AddTarget("push", c => c
-        .UseNugetPush()
+        .UseNugetPush(p => p.WithApiKeyFromEnvironment())
     )
     .AddApplication("stormsql", c => c
         .WithProjects(
@@ -38,6 +38,7 @@ Configure()
             .WithNuspec("misc/Storm.Sql.nuspec")
             .WithPackageId("Storm.Sql")
             .WithReleaseNotesFile("misc/Storm.Sql.md")
+            .AddAllFilesFromArtifacts("lib")
         )
     )
     .Build();
