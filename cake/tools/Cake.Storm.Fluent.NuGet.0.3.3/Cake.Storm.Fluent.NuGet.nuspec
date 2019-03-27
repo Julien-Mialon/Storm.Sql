@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Cake.Storm.Fluent.NuGet</id>
+    <version>0.3.3</version>
+    <title>Cake Fluent - NuGet</title>
+    <authors>Julien Mialon</authors>
+    <owners>Storm</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/Julien-Mialon/cake/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/Julien-Mialon/cake</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/cake-contrib/graphics/a5cf0f881c390650144b2243ae551d5b9f836196/png/cake-contrib-medium.png</iconUrl>
+    <description>Cake addin for fluent description for nuget release tasks.</description>
+    <releaseNotes>Version 0.3.1 :
+    - More flexibility to specify which files to pack in nuget packages (BREAKING CHANGE)
+
+Version 0.3.0 : 
+    - dependencies update
+
+Version 0.2.0 : 
+    - Update to Cake 0.22.0 dependencies
+    - Remove net45 framework support
+
+Version 0.1.0 : Initial release with tasks to pack and push nuget packages
+    - Pack the result of tasks into a nuget package
+    - Change version, author, id and others in nuspec file
+    - Add more files than just libs
+    - Push your package to nuget</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>cake cake-build cake-contrib fluent nuget package</tags>
+    <dependencies>
+      <dependency id="Cake.Common" version="0.32.1" />
+      <dependency id="Cake.Core" version="0.32.1" />
+      <dependency id="Cake.Storm.Fluent" version="0.3.3" />
+    </dependencies>
+  </metadata>
+</package>

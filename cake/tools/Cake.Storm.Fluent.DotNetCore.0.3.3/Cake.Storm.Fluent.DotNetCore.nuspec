@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Cake.Storm.Fluent.DotNetCore</id>
+    <version>0.3.3</version>
+    <title>Cake Fluent - .Net Core</title>
+    <authors>Julien Mialon</authors>
+    <owners>Storm</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/Julien-Mialon/cake/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/Julien-Mialon/cake</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/cake-contrib/graphics/a5cf0f881c390650144b2243ae551d5b9f836196/png/cake-contrib-medium.png</iconUrl>
+    <description>Cake addin for fluent description for dotnetcore tooling relative tasks.</description>
+    <releaseNotes>Version 0.3.3 : 
+    - Handle multiple projects build
+
+Version 0.3.1 : 
+    - Add cache for build &amp; restore step
+
+Version 0.3.0 : 
+    - dependencies update
+
+Version 0.2.0 : 
+    - Update to Cake 0.22.0 dependencies
+    - Remove net45 framework support
+
+Version 0.1.0 : Initial release with tasks to build and publish using dotnetcore tooling</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>cake cake-build cake-contrib fluent dotnetcore vs2017 netstandard</tags>
+    <dependencies>
+      <dependency id="Cake.Common" version="0.32.1" />
+      <dependency id="Cake.Core" version="0.32.1" />
+      <dependency id="Cake.Storm.Fluent" version="0.3.3" />
+    </dependencies>
+  </metadata>
+</package>

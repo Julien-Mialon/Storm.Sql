@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<package >
+	<metadata>
+		<id>{id}</id>
+		<version>{version}</version>
+		<title>Storm.Sql</title>
+		<authors>{author}</authors>
+		<owners>Storm</owners>
+		<licenseUrl>https://github.com/Julien-Mialon/Storm.Sql/blob/master/LICENSE</licenseUrl>
+		<projectUrl>https://github.com/Julien-Mialon/Storm.Sql</projectUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>Sql Ormlite</description>
+		<releaseNotes>{release_notes}</releaseNotes>
+		<tags>orm</tags>
+        <dependencies>
+            <group targetFramework=".NETStandard2.0">
+                <dependency id="System.Collections.NonGeneric" version="4.3.0" exclude="Build,Analyzers" />
+                <dependency id="System.ComponentModel.Annotations" version="4.5.0" exclude="Build,Analyzers" />
+                <dependency id="System.ComponentModel.Primitives" version="4.3.0" exclude="Build,Analyzers" />
+                <dependency id="System.Data.SqlClient" version="4.6.0" exclude="Build,Analyzers" />
+                <dependency id="System.Dynamic.Runtime" version="4.3.0" exclude="Build,Analyzers" />
+                <dependency id="System.Memory" version="4.5.2" exclude="Build,Analyzers" />
+                <dependency id="System.Reflection.Emit" version="4.3.0" exclude="Build,Analyzers" />
+                <dependency id="System.Reflection.Emit.Lightweight" version="4.3.0" exclude="Build,Analyzers" />
+                <dependency id="System.Reflection.TypeExtensions" version="4.5.0" exclude="Build,Analyzers" />
+                <dependency id="System.Xml.XmlDocument" version="4.3.0" exclude="Build,Analyzers" />
+                <dependency id="Mysql.Data" version="8.0.15" exclude="Build,Analyzers" />
+                <dependency id="Microsoft.Data.Sqlite" version="2.2.3" exclude="Build,Analyzers" />
+                <dependency id="System.Data.Common" version="4.3.0" exclude="Build,Analyzers" />
+                <dependency id="System.Net.NetworkInformation" version="4.3.0" exclude="Build,Analyzers" />
+                <dependency id="System.Net.Requests" version="4.3.0" exclude="Build,Analyzers" />
+                <dependency id="System.Runtime.Serialization.Primitives" version="4.3.0" exclude="Build,Analyzers" />
+                <dependency id="Microsoft.CSharp" version="4.5.0" exclude="Build,Analyzers" />
+                <dependency id="System.Runtime" version="4.3.0" exclude="Build,Analyzers" />
+            </group>
+        </dependencies>
+	</metadata>
+</package>
