@@ -2,7 +2,7 @@
 #load "nuget:?package=Cake.Storm.Fluent.DotNetCore"
 #load "nuget:?package=Cake.Storm.Fluent.NuGet"
 
-string version = Argument("version", "0.1.0");
+const string VERSION = "0.2.0";
 
 Configure()
     .UseRootDirectory("..")
@@ -32,7 +32,7 @@ Configure()
             "src/ServiceStack.OrmLite.SqlServer/ServiceStack.OrmLite.SqlServer.csproj",
             "src/ServiceStack.Text/ServiceStack.Text.csproj"
         )
-        .WithVersion(version)
+        .WithVersion(VERSION)
         .UseNugetPack(n => n
             .WithAuthor("Julien Mialon")
             .WithNuspec("misc/Storm.Sql.nuspec")
