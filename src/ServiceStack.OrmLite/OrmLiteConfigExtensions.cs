@@ -189,6 +189,8 @@ namespace ServiceStack.OrmLite
                     modelDef.RowVersion = fieldDefinition;
             }
 
+            OrmLiteConfig.OnFieldDefinitionsInit?.Invoke(modelDef);
+
             modelDef.AfterInit();
 
             Dictionary<Type, ModelDefinition> snapshot, newCache;

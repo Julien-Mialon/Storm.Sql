@@ -199,5 +199,7 @@ namespace ServiceStack.OrmLite
         public static Func<string, string> ParamNameFilter { get; set; }
         
         public static Action<ModelDefinition> OnModelDefinitionInit { get; set; }
+        
+        public static Action<ModelDefinition> OnFieldDefinitionsInit { get; set; }
     }
 }
